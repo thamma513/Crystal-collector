@@ -7,6 +7,14 @@ body {
     background-color: transparent;
  }
  p,h1,h2,h3,#guessingNumber,#totalScore,#scoreboard{
-     color: black;
+     color: white;
      font-weight: bolder;
+ }
+ #guessingNumber{
+    font-size: 25px;
+    font-weight: bolder
+ }
+ #totalScore{
+    font-size:25px;
+    font-weight:bolder;
  }

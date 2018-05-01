@@ -14,7 +14,7 @@ $( document ).ready(function(){
     var losses = 0;
     
   
-  $('#wins').text(winning);
+  $('#wins').text(wins);
   $('#losses').text(losses);
   
   function reset(){
@@ -30,14 +30,14 @@ $( document ).ready(function(){
         } 
 
   function winning(){
-  alert("Congrats! You won!");
+  alert("You won!");
     wins++; 
     $('#wins').text(wins);
     reset();
   }
 
   function loser(){
-  alert ("Sorry! You lose!");
+  alert ("You lose!");
     losses++;
     $('#losses').text(losses);
     reset()

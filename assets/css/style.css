@@ -1,0 +1,12 @@
+body {
+    background-image: url("assets/images/mine.jpg");
+    background-size: auto
+
+ }
+ #jumbotron{
+    background-color: transparent;
+ }
+ p,h1,h2,h3,#guessingNumber,#totalScore,#scoreboard{
+     color: black;
+     font-weight: bolder;
+ }

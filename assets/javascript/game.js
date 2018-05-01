@@ -1,5 +1,5 @@
 $( document ).ready(function(){
-    var Random=Math.floor(Math.random()*102+19)
+    var Random=Math.floor(Math.random()*102+8)
     
     
     $('#guessingNumber').text(Random);
@@ -18,7 +18,7 @@ $( document ).ready(function(){
   $('#losses').text(losses);
   
   function reset(){
-        Random=Math.floor(Math.random()*102+19);
+        Random=Math.floor(Math.random()*102+8);
         console.log(Random)
         $('#guessingNumber').text(Random);
         num1= Math.floor(Math.random()*12+1);

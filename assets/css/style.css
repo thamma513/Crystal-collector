@@ -1,6 +1,10 @@
 body {
     background-image: url("assets/images/mine.jpg");
-    background-size: auto
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;  
+    opacity: 50%;
 
  }
  #jumbotron{

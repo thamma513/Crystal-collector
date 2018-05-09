@@ -11,10 +11,6 @@ body {
  }
  #jumbotron{
     background-color: transparent;
-    background-position: center center;
-	background-repeat:  no-repeat;
-	background-attachment: fixed;
-	background-size: auto;
  }
  p,h1,h2,h3,#guessingNumber,#totalScore,#scoreboard{
      color: white;
@@ -28,10 +24,5 @@ body {
     font-size:25px;
     font-weight:bolder;
  }
- #crystals{
-    background-position: center center;
-	background-repeat:  no-repeat;
-	background-attachment: fixed;
-	background-size:  auto;
- }
+
  

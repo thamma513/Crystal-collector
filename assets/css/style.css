@@ -1,14 +1,20 @@
+html,body{
+    height: 100%;
+}
 body {
     background-image: url("assets/images/mine.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;  
-    opacity: 50%;
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
 
  }
  #jumbotron{
     background-color: transparent;
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size: auto;
  }
  p,h1,h2,h3,#guessingNumber,#totalScore,#scoreboard{
      color: white;
@@ -22,3 +28,10 @@ body {
     font-size:25px;
     font-weight:bolder;
  }
+ #crystals{
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  auto;
+ }
+ 

@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" integrity="sha383-9gVQ3dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ3"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha383-q8i/X+965DzO0rT7abK31JStQIAqVgRVzpbzo5smXKp3YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js" integrity="sha383-cs/chFZiN23E3KMATLdqdvsezGxaGsi3hLGOzlXwp5UZB1LY//20VyM2taTB3QvJ"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" integrity="sha383-uefMccjFJAIv6A+rW+L3AHf99KvxDjWSu1z9VI8SKNVmz3sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
     <title>Crystal Collector</title>
 </head>
@@ -41,7 +41,7 @@
 
             <div class="row">
 
-                <div class="col-lg-4" id="scoreboard">
+                <div class="col-lg-3" id="scoreboard">
                     <h3 id="status"></h3>
                     <h3> Wins:
                         <span id="wins">Wins: </span>
@@ -51,7 +51,7 @@
                     </h3>
                 </div>
 
-                <div class="col-lg-4" id="guessingNumber">
+                <div class="col-lg-3" id="guessingNumber">
                     <h2> Number to Guess:
                         <span class="value" id="totalScore">Number to Guess:</span>
                     </h2>
@@ -59,7 +59,7 @@
                 </div>
 
 
-                <div class="col-lg-4" id="totalScore">
+                <div class="col-lg-3" id="totalScore">
                     <h2>Your score:
                         <span id="userScore"> </span>Your Score: </h2>
                 </div>
@@ -68,25 +68,54 @@
 
         </div>
 
-        <div class="row text-center" id="crystals">
-            <div class="col-md-3">
+<div class="container">
+    <div class="row text-center" id="crystals">
+        <div class="col-md-3">
+            <div class="thumbnail">
                 <img src="assets/images/red-crystal.jpg" class="img-fluid img-thumnail red" alt="Red Crystal" width="auto" />
             </div>
-            <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
                 <img src="assets/images/blue-crystal.jpg" class="img-fluid img-thumbnail blue" alt="Blue Crystal" width="auto" />
             </div>
-            <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
                 <img src="assets/images/yellow-crystal.jpg" class="img-fluid img-thumnail yellow" alt="Yellow Crystal" width="auto"  />
             </div>
-            <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
                 <img src="assets/images/green-crystal.jpg" class="img-fluid img-thumnail green" alt="Green Crystal" width="auto" />
+                </div>
+              </a>
             </div>
+          </div>
         </div>
+    
+        <!-- <div class="row text-center" id="crystals">
+            <div class="col-md-3">
+                <img src= class="img" alt="Red Crystal" width="auto" /> -->
+            <!-- </div>
+            <div class="col-md-3">"assets/images/red-crystal.jpg"
+                <img src="assets/images/blue-crystal.jpg" class="img" alt="Blue Crystal" width="auto" />
+            </div> -->
+            <!-- <div class="col-md-3">
+                <img src="assets/images/yellow-crystal.jpg" class="img" alt="Yellow Crystal" width="auto"  />
+            </div>
+            <div class="col-md-3">
+                <img src="assets/images/green-crystal.jpg" class="img" alt="Green Crystal" width="auto" />
+            </div>
+        </div> -->
 
 
 
 
-</body>
+    </div>
+</div>
 <script src="assets/javascript/game.js"></script>
+</body>
+
 
 </html>

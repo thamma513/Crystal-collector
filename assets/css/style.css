@@ -1,8 +1,10 @@
 
 body {
+    height: 100%;
     background-image: url("assets/images/mine.jpg");
-	background-size:  auto;
-
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;  
  }
  #jumbotron{
     background-color: transparent;
@@ -19,5 +21,12 @@ body {
     font-size:25px;
     font-weight:bolder;
  }
+ 
+@media (max-width: 74.9em) {
+     .img {max-width: 25%;}
+     body {max-height:100% ;} 
+}
+
+
 
  

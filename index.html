@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha383-q8i/X+965DzO0rT7abK31JStQIAqVgRVzpbzo5smXKp3YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js" integrity="sha383-cs/chFZiN23E3KMATLdqdvsezGxaGsi3hLGOzlXwp5UZB1LY//20VyM2taTB3QvJ"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js" integrity="sha383-cs/chFZiN23E3KMATLdqdvsezGxaGsi3hmdOzlXwp5UZB1LY//20VyM2taTB3QvJ"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" integrity="sha383-uefMccjFJAIv6A+rW+L3AHf99KvxDjWSu1z9VI8SKNVmz3sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
@@ -18,30 +18,10 @@
 
 <body style="background-image:url(assets/images/mine.jpg)">
     <div class="jumbotron text-center" id="jumbotron">
-
-
-        <h1>
-            <span>Crystal Collectors!
-            </span>
-        </h1>
-
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12" id="instructions">
 
-
-                    <p> Begin with a random number</p>
-                    <p> Each crystal is assigned a random value.</p>
-                    <p> To win the game add the correct number of crystals together to reach the number. </p>
-                    <p> The crystals are re-assigned values each time the game restarts.</p>
-                </div>
-            </div>
-
-
-
-            <div class="row">
-
-                <div class="col-lg-3" id="scoreboard">
+                <div class="col-md-3" id="scoreboard">
                     <h3 id="status"></h3>
                     <h3> Wins:
                         <span id="wins">Wins: </span>
@@ -51,41 +31,39 @@
                     </h3>
                 </div>
 
-                <div class="col-lg-3" id="guessingNumber">
-                    <h2> Number to Guess:
-                        <span class="value" id="totalScore">Number to Guess:</span>
+                <div class="col-md-3" id="guessingNumber">
+                    <h2>
+                        <span class="value" id="guessingNumber"></span>
                     </h2>
 
                 </div>
-
-
-                <div class="col-lg-3" id="totalScore">
-                    <h2>Your score:
-                        <span id="userScore"> </span>Your Score: </h2>
+                <div class="col-md-3" id="totalScore">
+                    <h2>
+                        <span id="userScore"> </span> </h2>
                 </div>
 
             </div>
 
         </div>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row text-center" id="crystals">
-        <div class="col-md-3">
+        <div class="col-xs-3-md-3">
             <div class="thumbnail">
                 <img src="assets/images/red-crystal.jpg" class="img-fluid img-thumnail red" alt="Red Crystal" width="auto" />
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-xs-3-md-3">
             <div class="thumbnail">
                 <img src="assets/images/blue-crystal.jpg" class="img-fluid img-thumbnail blue" alt="Blue Crystal" width="auto" />
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-3-md-3">
             <div class="thumbnail">
                 <img src="assets/images/yellow-crystal.jpg" class="img-fluid img-thumnail yellow" alt="Yellow Crystal" width="auto"  />
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-3-md-3">
             <div class="thumbnail">
                 <img src="assets/images/green-crystal.jpg" class="img-fluid img-thumnail green" alt="Green Crystal" width="auto" />
                 </div>
@@ -93,29 +71,20 @@
             </div>
           </div>
         </div>
-    
-        <!-- <div class="row text-center" id="crystals">
-            <div class="col-md-3">
-                <img src= class="img" alt="Red Crystal" width="auto" /> -->
-            <!-- </div>
-            <div class="col-md-3">"assets/images/red-crystal.jpg"
-                <img src="assets/images/blue-crystal.jpg" class="img" alt="Blue Crystal" width="auto" />
-            </div> -->
-            <!-- <div class="col-md-3">
-                <img src="assets/images/yellow-crystal.jpg" class="img" alt="Yellow Crystal" width="auto"  />
-            </div>
-            <div class="col-md-3">
-                <img src="assets/images/green-crystal.jpg" class="img" alt="Green Crystal" width="auto" />
-            </div>
-        </div> -->
+    </div> 
+        <div class="row"></div>
+        <div class="col-md-12" id="instructions">
 
-
-
-
+            <p>CRYSTAL COLLECTOR!</p>
+            <p> Begin with a random number Each crystal is assigned a random value.</p>
+            <p> To win the game add the correct number of crystals together to reach the number. </p>
+            <p> The crystals are re-assigned values each time the game restarts.</p>
+        </div>
     </div>
+    
 </div>
-<script src="assets/javascript/game.js"></script>
 </body>
+<script src="assets/javascript/game.js"></script>
 
 
 </html>

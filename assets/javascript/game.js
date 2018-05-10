@@ -2,7 +2,7 @@ $(document).ready(function () {
     var Random = Math.floor(Math.random() * 102 + 8)
 
 
-    $('#guessingNumber').text(Random);
+    $('#guessingNumber').append("<h2>Number to guess: " +Random +"</h2>");
 
     var num1 = Math.floor(Math.random() * 12 + 1)
     var num2 = Math.floor(Math.random() * 12 + 1)
@@ -14,13 +14,13 @@ $(document).ready(function () {
     var losses = 0;
 
 
-    $('#wins').text(wins);
-    $('#losses').text(losses);
+    $('#wins').append(wins);
+    $('#losses').append(losses);
 
     function reset() {
         Random = Math.floor(Math.random() * 102 + 8);
         console.log(Random)
-        $('#guessingNumber').text(Random);
+        $('#guessingNumber').append(Random);
         num1 = Math.floor(Math.random() * 12 + 1);
         num2 = Math.floor(Math.random() * 12 + 1);
         num3 = Math.floor(Math.random() * 12 + 1);
@@ -32,20 +32,20 @@ $(document).ready(function () {
     function winning() {
         alert("You won!");
         wins++;
-        $('#wins').text(wins);
+        $('#wins').append(wins);
         reset();
     }
 
     function loser() {
         alert("You lose!");
         losses++;
-        $('#losses').text(losses);
+        $('#losses').append(losses);
         reset()
     }
     $('.red').on('click', function () {
         playerTotal = playerTotal + num1;
         console.log("New playerTotal= " + playerTotal);
-        $('#totalScore').text(playerTotal);
+        $('#totalScore').html("<h2> Current score: " +playerTotal+ "</h2>");
         if (playerTotal == Random) {
             winning();
         }
@@ -56,7 +56,7 @@ $(document).ready(function () {
     $('.blue').on('click', function () {
         playerTotal = playerTotal + num2;
         console.log("New playerTotal= " + playerTotal);
-        $('#totalScore').text(playerTotal);
+        $('#totalScore').html("<h2> Current score:" +playerTotal+ "</h2>");
         if (playerTotal == Random) {
             winning();
         }
@@ -67,7 +67,7 @@ $(document).ready(function () {
     $('.yellow').on('click', function () {
         playerTotal = playerTotal + num3;
         console.log("New playerTotal= " + playerTotal);
-        $('#totalScore').text(playerTotal);
+        $('#totalScore').html("<h2> Current score:" +playerTotal+ "</h2>");
 
         if (playerTotal == Random) {
             winning();
@@ -79,7 +79,7 @@ $(document).ready(function () {
     $('.green').on('click', function () {
         playerTotal = playerTotal + num4;
         console.log("New playerTotal= " + playerTotal);
-        $('#totalScore').text(playerTotal);
+        $('#totalScore').html("<h2> Current score:" +playerTotal+ "</h2>");
 
         if (playerTotal == Random) {
             winning();

@@ -4,7 +4,8 @@ body {
     background-image: url("assets/images/mine.jpg");
     background-position: center;
     background-repeat:no-repeat;
-    background-size: cover;  
+    background-size: cover;
+      
  }
  #jumbotron{
     background-color: transparent;
@@ -12,13 +13,15 @@ body {
  p,h1,h2,h3,#guessingNumber,#totalScore,#scoreboard{
      color: white;
      font-weight: bolder;
+     font-size: 3vw;
+ }
+ p{
+     font-size: 3vw;
  }
  #guessingNumber{
-    font-size: 25px;
-    font-weight: bolder
+    font-weight: bolder;
  }
  #totalScore{
-    font-size:25px;
     font-weight:bolder;
  }
  

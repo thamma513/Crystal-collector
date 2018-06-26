@@ -24,6 +24,26 @@ body {
  #totalScore{
     font-weight:bolder;
  }
+ #wrapper {
+    width:800px;
+    clear:both;
+  }
+  #first {
+    width:200px;
+    float:left;
+  }
+  #second {
+    width:200px;
+    float:left;
+  }
+  #third {
+    width:200px;
+    float:left;
+  }
+  #fourth {
+      width:200px;
+      float:left;
+  }
  
 @media (max-width: 74.9em) {
      .img {max-width: 25%;}
